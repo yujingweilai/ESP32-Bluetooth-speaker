@@ -1,0 +1,1050 @@
+﻿{
+    "framework":  "ESP-IDF",
+    "fileCount":  83,
+    "frameworksDetected":  [
+                               "ESP-IDF",
+                               "FreeRTOS",
+                               "ESP-ADF"
+                           ],
+    "projectName":  "vib_player",
+    "languagesDetected":  [
+                              "batch",
+                              "c",
+                              "cmake",
+                              "csv",
+                              "json",
+                              "makefile",
+                              "markdown",
+                              "other",
+                              "patch",
+                              "shell"
+                          ],
+    "projectVersion":  "3.8.0",
+    "languageSummary":  {
+                            "makefile":  3,
+                            "other":  8,
+                            "batch":  1,
+                            "json":  5,
+                            "csv":  1,
+                            "shell":  1,
+                            "c":  44,
+                            "markdown":  11,
+                            "cmake":  8,
+                            "patch":  1
+                        },
+    "files":  [
+                  {
+                      "size":  1546,
+                      "name":  "devcontainer.json",
+                      "fileCategory":  "infra",
+                      "language":  "json",
+                      "path":  ".devcontainer\\devcontainer.json",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  47
+                  },
+                  {
+                      "size":  930,
+                      "name":  "c_cpp_properties.json",
+                      "fileCategory":  "infra",
+                      "language":  "json",
+                      "path":  ".vscode\\c_cpp_properties.json",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  27
+                  },
+                  {
+                      "size":  146,
+                      "name":  "launch.json",
+                      "fileCategory":  "infra",
+                      "language":  "json",
+                      "path":  ".vscode\\launch.json",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  10
+                  },
+                  {
+                      "size":  3599,
+                      "name":  "settings.json",
+                      "fileCategory":  "infra",
+                      "language":  "json",
+                      "path":  ".vscode\\settings.json",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  140
+                  },
+                  {
+                      "size":  7581,
+                      "name":  "tasks.json",
+                      "fileCategory":  "infra",
+                      "language":  "json",
+                      "path":  ".vscode\\tasks.json",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  258
+                  },
+                  {
+                      "size":  13117,
+                      "name":  "bq256xx.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\charger\\bq256xx.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  258
+                  },
+                  {
+                      "size":  12963,
+                      "name":  "bq256xx_drv.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\charger\\bq256xx_drv.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  374
+                  },
+                  {
+                      "size":  2677,
+                      "name":  "bq256xx_drv.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\charger\\bq256xx_drv.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  57
+                  },
+                  {
+                      "size":  14988,
+                      "name":  "charger.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\charger\\charger.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  321
+                  },
+                  {
+                      "size":  1551,
+                      "name":  "charger.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\charger\\charger.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  46
+                  },
+                  {
+                      "size":  152,
+                      "name":  "CMakeLists.txt",
+                      "fileCategory":  "other",
+                      "language":  "cmake",
+                      "path":  "components\\charger\\CMakeLists.txt",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  8
+                  },
+                  {
+                      "size":  166,
+                      "name":  "CMakeLists.txt",
+                      "fileCategory":  "other",
+                      "language":  "cmake",
+                      "path":  "components\\oled_ssd1315\\CMakeLists.txt",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  9
+                  },
+                  {
+                      "size":  5199,
+                      "name":  "font.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\oled_ssd1315\\font.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  130
+                  },
+                  {
+                      "size":  22232,
+                      "name":  "oled_ssd1315.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\oled_ssd1315\\oled_ssd1315.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  741
+                  },
+                  {
+                      "size":  2409,
+                      "name":  "oled_ssd1315.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\oled_ssd1315\\oled_ssd1315.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  56
+                  },
+                  {
+                      "size":  982,
+                      "name":  "periph_battery.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\periph_battery\\include\\periph_battery.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  35
+                  },
+                  {
+                      "size":  152,
+                      "name":  "CMakeLists.txt",
+                      "fileCategory":  "other",
+                      "language":  "cmake",
+                      "path":  "components\\periph_battery\\CMakeLists.txt",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  3
+                  },
+                  {
+                      "size":  15627,
+                      "name":  "periph_battery.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\periph_battery\\periph_battery.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  389
+                  },
+                  {
+                      "size":  1079,
+                      "name":  "periph_key.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\periph_key\\include\\periph_key.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  25
+                  },
+                  {
+                      "size":  139,
+                      "name":  "CMakeLists.txt",
+                      "fileCategory":  "other",
+                      "language":  "cmake",
+                      "path":  "components\\periph_key\\CMakeLists.txt",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  4
+                  },
+                  {
+                      "size":  5744,
+                      "name":  "periph_key.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\periph_key\\periph_key.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  154
+                  },
+                  {
+                      "size":  31461,
+                      "name":  "board.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\vib_board\\board_v3_0\\board.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  909
+                  },
+                  {
+                      "size":  5048,
+                      "name":  "board.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\vib_board\\board_v3_0\\board.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  152
+                  },
+                  {
+                      "size":  4682,
+                      "name":  "board_def.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\vib_board\\board_v3_0\\board_def.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  121
+                  },
+                  {
+                      "size":  4341,
+                      "name":  "board_pins_config.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\vib_board\\board_v3_0\\board_pins_config.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  134
+                  },
+                  {
+                      "size":  668,
+                      "name":  "board_pins_config_custom.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "components\\vib_board\\board_v3_0\\board_pins_config_custom.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  24
+                  },
+                  {
+                      "size":  1314,
+                      "name":  "CMakeLists.txt",
+                      "fileCategory":  "other",
+                      "language":  "cmake",
+                      "path":  "components\\vib_board\\CMakeLists.txt",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  29
+                  },
+                  {
+                      "size":  429,
+                      "name":  "component.mk",
+                      "fileCategory":  "infra",
+                      "language":  "makefile",
+                      "path":  "components\\vib_board\\component.mk",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  14
+                  },
+                  {
+                      "size":  1007,
+                      "name":  "Kconfig.projbuild",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "components\\vib_board\\Kconfig.projbuild",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  33
+                  },
+                  {
+                      "size":  4982,
+                      "name":  "audio_pipeline_analysis.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "docs\\audio_pipeline_analysis.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  79
+                  },
+                  {
+                      "size":  10751,
+                      "name":  "bq25628e_ntc_fix.patch",
+                      "fileCategory":  "config",
+                      "language":  "patch",
+                      "path":  "docs\\bq25628e_ntc_fix.patch",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  220
+                  },
+                  {
+                      "size":  2355,
+                      "name":  "bq25628e_ntc_fix_plan.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "docs\\bq25628e_ntc_fix_plan.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  33
+                  },
+                  {
+                      "size":  6530,
+                      "name":  "esp_adf_audio_control_principles.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "docs\\esp_adf_audio_control_principles.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  162
+                  },
+                  {
+                      "size":  21502,
+                      "name":  "系统流程图.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "docs\\系统流程图.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  485
+                  },
+                  {
+                      "size":  9406,
+                      "name":  "fw_timer.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\lib\\fw_timer.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  214
+                  },
+                  {
+                      "size":  2449,
+                      "name":  "fw_timer.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\lib\\fw_timer.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  59
+                  },
+                  {
+                      "size":  6245,
+                      "name":  "fw_timer_test.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\lib\\fw_timer_test.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  125
+                  },
+                  {
+                      "size":  209,
+                      "name":  "component.mk",
+                      "fileCategory":  "infra",
+                      "language":  "makefile",
+                      "path":  "main\\tone\\component.mk",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  4
+                  },
+                  {
+                      "size":  264,
+                      "name":  "embed_tone.cmake",
+                      "fileCategory":  "infra",
+                      "language":  "cmake",
+                      "path":  "main\\tone\\embed_tone.cmake",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  5
+                  },
+                  {
+                      "size":  11860,
+                      "name":  "app_ble.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_ble.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  285
+                  },
+                  {
+                      "size":  627,
+                      "name":  "app_ble.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_ble.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  22
+                  },
+                  {
+                      "size":  4424,
+                      "name":  "app_bms.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_bms.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  150
+                  },
+                  {
+                      "size":  0,
+                      "name":  "app_bms.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_bms.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  1
+                  },
+                  {
+                      "size":  9627,
+                      "name":  "app_bt.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_bt.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  261
+                  },
+                  {
+                      "size":  1608,
+                      "name":  "app_bt.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_bt.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  61
+                  },
+                  {
+                      "size":  23012,
+                      "name":  "app_control.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_control.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  607
+                  },
+                  {
+                      "size":  1748,
+                      "name":  "app_control.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_control.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  45
+                  },
+                  {
+                      "size":  6881,
+                      "name":  "app_gatt_device.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_gatt_device.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  139
+                  },
+                  {
+                      "size":  354,
+                      "name":  "app_gatt_device.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_gatt_device.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  7
+                  },
+                  {
+                      "size":  23314,
+                      "name":  "app_gatt_ota.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_gatt_ota.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  454
+                  },
+                  {
+                      "size":  203,
+                      "name":  "app_gatt_ota.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_gatt_ota.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  4
+                  },
+                  {
+                      "size":  9706,
+                      "name":  "app_gatt_uart.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_gatt_uart.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  179
+                  },
+                  {
+                      "size":  282,
+                      "name":  "app_gatt_uart.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_gatt_uart.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  6
+                  },
+                  {
+                      "size":  86692,
+                      "name":  "app_player.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_player.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  1799
+                  },
+                  {
+                      "size":  1342,
+                      "name":  "app_player.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_player.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  32
+                  },
+                  {
+                      "size":  214686,
+                      "name":  "app_player_sdcard.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_player_sdcard.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  5088
+                  },
+                  {
+                      "size":  1013,
+                      "name":  "app_player_sdcard.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_player_sdcard.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  29
+                  },
+                  {
+                      "size":  10717,
+                      "name":  "app_sys_tools.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_sys_tools.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  182
+                  },
+                  {
+                      "size":  1508,
+                      "name":  "app_sys_tools.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\app_sys_tools.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  37
+                  },
+                  {
+                      "size":  933,
+                      "name":  "audio_embed_tone.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\audio_embed_tone.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  37
+                  },
+                  {
+                      "size":  2376,
+                      "name":  "audio_embed_tone.h",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\audio_embed_tone.h",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  54
+                  },
+                  {
+                      "size":  656,
+                      "name":  "CMakeLists.txt",
+                      "fileCategory":  "other",
+                      "language":  "cmake",
+                      "path":  "main\\CMakeLists.txt",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  32
+                  },
+                  {
+                      "size":  107,
+                      "name":  "component.mk",
+                      "fileCategory":  "infra",
+                      "language":  "makefile",
+                      "path":  "main\\component.mk",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  3
+                  },
+                  {
+                      "size":  1439,
+                      "name":  "main.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "main\\main.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  42
+                  },
+                  {
+                      "size":  25754,
+                      "name":  "SKILL.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "vib_skill\\esp32-test-skill\\SKILL.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  471
+                  },
+                  {
+                      "size":  53273,
+                      "name":  "SKILL.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "vib_skill\\prompt-processor_esp32\\SKILL.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  1007
+                  },
+                  {
+                      "size":  3519,
+                      "name":  "ADF资料.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "ADF资料.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  57
+                  },
+                  {
+                      "size":  85979,
+                      "name":  "back.c",
+                      "fileCategory":  "code",
+                      "language":  "c",
+                      "path":  "back.c",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  1626
+                  },
+                  {
+                      "size":  1518,
+                      "name":  "CMakeLists.txt",
+                      "fileCategory":  "other",
+                      "language":  "cmake",
+                      "path":  "CMakeLists.txt",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  33
+                  },
+                  {
+                      "size":  1038,
+                      "name":  "merge_bin.sh",
+                      "fileCategory":  "script",
+                      "language":  "shell",
+                      "path":  "merge_bin.sh",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  32
+                  },
+                  {
+                      "size":  2036,
+                      "name":  "merge_bin_win.bat",
+                      "fileCategory":  "script",
+                      "language":  "batch",
+                      "path":  "merge_bin_win.bat",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  76
+                  },
+                  {
+                      "size":  610,
+                      "name":  "partitions.csv",
+                      "fileCategory":  "config",
+                      "language":  "csv",
+                      "path":  "partitions.csv",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  13
+                  },
+                  {
+                      "size":  57,
+                      "name":  "README.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "README.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  2
+                  },
+                  {
+                      "size":  84065,
+                      "name":  "sdkconfig",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "sdkconfig",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  2525
+                  },
+                  {
+                      "size":  68461,
+                      "name":  "sdkconfig copy",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "sdkconfig copy",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  2067
+                  },
+                  {
+                      "size":  69072,
+                      "name":  "sdkconfig copy 2",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "sdkconfig copy 2",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  2086
+                  },
+                  {
+                      "size":  1188,
+                      "name":  "sdkconfig.defaults",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "sdkconfig.defaults",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  34
+                  },
+                  {
+                      "size":  367,
+                      "name":  "sdkconfig.defaults.esp32",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "sdkconfig.defaults.esp32",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  15
+                  },
+                  {
+                      "size":  462,
+                      "name":  "sdkconfig.defaults.esp32s3",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "sdkconfig.defaults.esp32s3",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  20
+                  },
+                  {
+                      "size":  84208,
+                      "name":  "sdkconfig.old",
+                      "fileCategory":  "other",
+                      "language":  "other",
+                      "path":  "sdkconfig.old",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  2530
+                  },
+                  {
+                      "size":  6270,
+                      "name":  "开发接手手册.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "开发接手手册.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  149
+                  },
+                  {
+                      "size":  24013,
+                      "name":  "日志梳理.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "日志梳理.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  519
+                  },
+                  {
+                      "size":  8495,
+                      "name":  "项目分析报告.md",
+                      "fileCategory":  "docs",
+                      "language":  "markdown",
+                      "path":  "项目分析报告.md",
+                      "importMap":  [
+
+                                    ],
+                      "lines":  181
+                  }
+              ],
+    "categories":  {
+                       "other":  [
+                                     "components\\charger\\CMakeLists.txt",
+                                     "components\\oled_ssd1315\\CMakeLists.txt",
+                                     "components\\periph_battery\\CMakeLists.txt",
+                                     "components\\periph_key\\CMakeLists.txt",
+                                     "components\\vib_board\\CMakeLists.txt",
+                                     "components\\vib_board\\Kconfig.projbuild",
+                                     "main\\CMakeLists.txt",
+                                     "CMakeLists.txt",
+                                     "sdkconfig",
+                                     "sdkconfig copy",
+                                     "sdkconfig copy 2",
+                                     "sdkconfig.defaults",
+                                     "sdkconfig.defaults.esp32",
+                                     "sdkconfig.defaults.esp32s3",
+                                     "sdkconfig.old"
+                                 ],
+                       "infra":  [
+                                     ".devcontainer\\devcontainer.json",
+                                     ".vscode\\c_cpp_properties.json",
+                                     ".vscode\\launch.json",
+                                     ".vscode\\settings.json",
+                                     ".vscode\\tasks.json",
+                                     "components\\vib_board\\component.mk",
+                                     "main\\tone\\component.mk",
+                                     "main\\tone\\embed_tone.cmake",
+                                     "main\\component.mk"
+                                 ],
+                       "script":  [
+                                      "merge_bin.sh",
+                                      "merge_bin_win.bat"
+                                  ],
+                       "code":  [
+                                    "components\\charger\\bq256xx.h",
+                                    "components\\charger\\bq256xx_drv.c",
+                                    "components\\charger\\bq256xx_drv.h",
+                                    "components\\charger\\charger.c",
+                                    "components\\charger\\charger.h",
+                                    "components\\oled_ssd1315\\font.h",
+                                    "components\\oled_ssd1315\\oled_ssd1315.c",
+                                    "components\\oled_ssd1315\\oled_ssd1315.h",
+                                    "components\\periph_battery\\include\\periph_battery.h",
+                                    "components\\periph_battery\\periph_battery.c",
+                                    "components\\periph_key\\include\\periph_key.h",
+                                    "components\\periph_key\\periph_key.c",
+                                    "components\\vib_board\\board_v3_0\\board.c",
+                                    "components\\vib_board\\board_v3_0\\board.h",
+                                    "components\\vib_board\\board_v3_0\\board_def.h",
+                                    "components\\vib_board\\board_v3_0\\board_pins_config.c",
+                                    "components\\vib_board\\board_v3_0\\board_pins_config_custom.h",
+                                    "main\\lib\\fw_timer.c",
+                                    "main\\lib\\fw_timer.h",
+                                    "main\\lib\\fw_timer_test.c",
+                                    "main\\app_ble.c",
+                                    "main\\app_ble.h",
+                                    "main\\app_bms.c",
+                                    "main\\app_bms.h",
+                                    "main\\app_bt.c",
+                                    "main\\app_bt.h",
+                                    "main\\app_control.c",
+                                    "main\\app_control.h",
+                                    "main\\app_gatt_device.c",
+                                    "main\\app_gatt_device.h",
+                                    "main\\app_gatt_ota.c",
+                                    "main\\app_gatt_ota.h",
+                                    "main\\app_gatt_uart.c",
+                                    "main\\app_gatt_uart.h",
+                                    "main\\app_player.c",
+                                    "main\\app_player.h",
+                                    "main\\app_player_sdcard.c",
+                                    "main\\app_player_sdcard.h",
+                                    "main\\app_sys_tools.c",
+                                    "main\\app_sys_tools.h",
+                                    "main\\audio_embed_tone.c",
+                                    "main\\audio_embed_tone.h",
+                                    "main\\main.c",
+                                    "back.c"
+                                ],
+                       "config":  [
+                                      "docs\\bq25628e_ntc_fix.patch",
+                                      "partitions.csv"
+                                  ],
+                       "docs":  [
+                                    "docs\\audio_pipeline_analysis.md",
+                                    "docs\\bq25628e_ntc_fix_plan.md",
+                                    "docs\\esp_adf_audio_control_principles.md",
+                                    "docs\\系统流程图.md",
+                                    "vib_skill\\esp32-test-skill\\SKILL.md",
+                                    "vib_skill\\prompt-processor_esp32\\SKILL.md",
+                                    "ADF资料.md",
+                                    "README.md",
+                                    "开发接手手册.md",
+                                    "日志梳理.md",
+                                    "项目分析报告.md"
+                                ]
+                   },
+    "projectDescription":  "针对振动播放器设备的ESP-IDF固件项目，集成BLE通信、电源管理、音频播放和OLED显示功能",
+    "complexityEstimate":  "high",
+    "totalLines":  28893
+}

@@ -1,0 +1,304 @@
+D (520648) PERIPH_KEY: KEY_ID: 1, ACTION:1 [0m
+[0;33mW (520648) APP_CONTROL: [*] source_type: 1048606, cmd: 1, data: 1[0m
+D (520750) PERIPH_KEY: KEY_ID: 1, ACTION:2 [0m
+[0;33mW (520750) APP_CONTROL: [*] source_type: 1048606, cmd: 2, data: 1[0m
+D (520750) APP_PlAYER: [app_player_on_next] [0m
+[0;32mI (520754) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_NEXT[0m
+[0;32mI (520762) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_NEXT[0m
+[0;33mW (520762) APP_CONTROL: KEY ACTION: on_next[0m
+[0;32mI (520770) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_SWITCHING[0m
+[0;32mI (520782) APP_PLAYER_SDCARD: [switch_debounce] source=_on_next_song step=1 pending=1 wait=200ms[0m
+[0;32mI (520982) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_SWITCH_COMMIT[0m
+[0;32mI (520982) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_SWITCH_COMMIT[0m
+[0;32mI (520988) APP_PLAYER_SDCARD: [switch_debounce] commit steps=1[0m
+[0;32mI (520994) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (521001) APP_PlAYER: [base_stream_silence_wait] enable=1 timeout=20[0m
+[0;32mI (521008) APP_PLAYER_SDCARD: [soft_switch] mute prepared, pipe_state=7[0m
+[0;32mI (521016) APP_PLAYER_SDCARD: [switch_format] Format matched (hot reset)[0m
+[0;32mI (521023) APP_PLAYER_SDCARD: Hot reset pipeline for same format switch[0m
+D (521030) AUDIO_PIPELINE: audio_element_stop[0m
+[0;33mW (521035) AUDIO_PIPELINE: Without stop, st:7[0m
+[0;33mW (521040) AUDIO_PIPELINE: Without wait stop, st:7[0m
+[0;32mI (521045) APP_PLAYER_SDCARD: [_play_latest] SD_PLAYER_STATE not playing[0m
+[0;32mI (521053) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_SWITCHING[0m
+[0;32mI (521060) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (521101) AUDIO_THREAD: The sdcard_fatfs task allocate stack on external memory[0m
+[0;32mI (521102) AUDIO_ELEMENT: [sdcard_fatfs-0x3f84a334] Element task created[0m
+[0;32mI (521106) AUDIO_THREAD: The sdcard_decoder task allocate stack on external memory[0m
+[0;32mI (521114) AUDIO_ELEMENT: [sdcard_decoder-0x3f84a58c] Element task created[0m
+[0;32mI (521122) AUDIO_THREAD: The sdcard_filter task allocate stack on external memory[0m
+[0;32mI (521130) AUDIO_ELEMENT: [sdcard_filter-0x3f84a700] Element task created[0m
+[0;32mI (521139) AUDIO_ELEMENT: [sdcard_fatfs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (521144) AUDIO_ELEMENT: [sdcard_decoder] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (521151) ESP_DECODER: Ready to do audio type check, pos:0, (line 105)[0m
+[0;32mI (521159) AUDIO_ELEMENT: [sdcard_filter] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (521166) APP_PLAYER_SDCARD: [start_preload] wav=0 threshold=0.00[0m
+[0;32mI (521172) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_LOADING[0m
+[0;33mW (521180) APP_PLAYER_SDCARD: [_play_latest] playlist:file://sdcard/李佳薇-煎熬_128k.mp3 playback:file://sdcard/李佳薇-煎熬_128k.mp3 shadow:0[0m
+[0;32mI (521253) RSP_FILTER: sample rate of source data : 44100, channel of source data : 2, sample rate of destination data : 48000, channel of destination data : 1[0m
+D (521257) AUDIO_ELEMENT: [sdcard_filter] el opened[0m
+D (521262) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_filter]evt out cmd = 8,status:12[0m
+[0;32mI (521270) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_filter], cmd=8, data=12[0m
+[0;32mI (521284) FATFS_STREAM: File size: 4194498 byte, file position: 0[0m
+D (521286) AUDIO_ELEMENT: [sdcard_fatfs] el opened[0m
+D (521291) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_fatfs]evt out cmd = 8,status:12[0m
+[0;32mI (521298) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_fatfs], cmd=8, data=12[0m
+[0;32mI (521307) ESP_DECODER: Detect audio type is MP3[0m
+[0;32mI (521313) MP3_DECODER: MP3 opened[0m
+[0;32mI (521317) CODEC_ELEMENT_HELPER: The element is 0x3f84a58c. The reserve data 2 is 0x0.[0m
+D (521329) AUDIO_ELEMENT: [sdcard_decoder] el opened[0m
+D (521331) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_decoder]evt out cmd = 8,status:12[0m
+[0;32mI (521338) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_decoder], cmd=8, data=12[0m
+D (521346) AUDIO_ELEMENT: REPORT_INFO,[sdcard_decoder]evt out cmd:9,[0m
+[0;32mI (521354) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_decoder], cmd=9, data=0[0m
+[0;32mI (521364) APP_PLAYER_SDCARD: [sdcard_event_handler] Received music info from [sdcard_decoder], sample_rates=44100, bits=16, ch=2 [0m
+[0;32mI (521673) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (521674) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (521680) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (521690) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (521720) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (521720) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=62416 safe=174762 hits=0/2 rb=524288[0m
+[0;32mI (521933) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (521933) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (521939) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (521949) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (521979) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (521979) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=112572 safe=174762 hits=0/2 rb=524288[0m
+[0;32mI (522182) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (522182) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (522188) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (522198) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (522227) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (522228) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=160496 safe=174762 hits=0/2 rb=524288[0m
+[0;32mI (522434) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (522440) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (522450) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (522456) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (522485) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (522485) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=210652 safe=174762 hits=1/2 rb=524288[0m
+[0;32mI (522688) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (522689) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (522695) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (522705) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (522735) APP_PlAYER: [base_stream_read_freeze] enable=0 frozen=0[0m
+[0;32mI (522735) APP_PlAYER: [base_stream_silence_wait] enable=0 timeout=0[0m
+[0;32mI (522738) APP_PLAYER_SDCARD: [startup_guard] ready track wav=0 soft=1 filled=260808 safe=174762[0m
+[0;32mI (522747) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_PLAYING[0m
+D (523797) PERIPH_KEY: KEY_ID: 1, ACTION:1 [0m
+[0;33mW (523798) APP_CONTROL: [*] source_type: 1048606, cmd: 1, data: 1[0m
+D (523918) PERIPH_KEY: KEY_ID: 1, ACTION:2 [0m
+[0;33mW (523918) APP_CONTROL: [*] source_type: 1048606, cmd: 2, data: 1[0m
+D (523919) APP_PlAYER: [app_player_on_next] [0m
+D (523938) APP_PlAYER: 
+-----------Element status:--------------- 
+[0m
+[0;32mI (524036) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_NEXT[0m
+D (524036) APP_PlAYER: current_base_pipeline:[3f855cac][0m
+[0;32mI (524164) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_NEXT[0m
+[0;32mI (524168) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_SWITCHING[0m
+[0;32mI (524175) APP_PLAYER_SDCARD: [switch_debounce] source=_on_next_song step=1 pending=1 wait=200ms[0m
+D (524185) APP_PlAYER: mixer[3f8092c0]pipeline:3,mixer:3,eq:3 i2s:3[0m
+D (524191) APP_PlAYER: a2dp[3f82a81c].pipeline:1,a2dp_stream:1,rsp_filter:1,raw:1[0m
+[0;33mW (524198) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (524208) APP_SYS_TOOLS: Func:sys_monitor_task, Line:186, MEM Total:2613392 Bytes, Inter:127455 Bytes, Dram:119519 Bytes, Dram largest free:110592Bytes
+[0m
+[0;33mW (524164) APP_CONTROL: KEY ACTION: on_next[0m
+[0;32mI (524544) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_SWITCH_COMMIT[0m
+[0;32mI (524545) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_SWITCH_COMMIT[0m
+[0;32mI (524551) APP_PLAYER_SDCARD: [switch_debounce] commit steps=1[0m
+[0;32mI (524557) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (524564) APP_PlAYER: [base_stream_silence_wait] enable=1 timeout=20[0m
+[0;32mI (524571) APP_PLAYER_SDCARD: [rb_diag][pause_before] state pipe=3 fatfs=3 dec=3 rsp=3 raw(bypass)=1[0m
+[0;32mI (524581) APP_PLAYER_SDCARD: [rb_diag][pause_before] fatfs_out rb=0x3f84a9e0 filled=2481 size=262144 avail=259663[0m
+[0;32mI (524592) APP_PLAYER_SDCARD: [rb_diag][pause_before] dec_in    rb=0x3f84a9e0 filled=1645 size=262144 avail=260499[0m
+[0;32mI (524603) APP_PLAYER_SDCARD: [rb_diag][pause_before] dec_out   rb=0x3f84aa24 filled=32256 size=524288 avail=492032[0m
+[0;32mI (524614) APP_PLAYER_SDCARD: [rb_diag][pause_before] rsp_in    rb=0x3f84aa24 filled=36864 size=524288 avail=487424[0m
+[0;32mI (524625) APP_PLAYER_SDCARD: [rb_diag][pause_before] rsp_out   rb=0x3f84aa68 filled=450616 size=524288 avail=73672[0m
+[0;33mW (524636) APP_PLAYER_SDCARD: [rb_diag_warn][pause_before] rsp_out usage=87% (filled=459532 size=524288), threshold=80%[0m
+[0;32mI (524648) APP_PLAYER_SDCARD: [rb_diag][pause_before] raw_in    rb=0x3f84aa68 filled=467336 size=524288 avail=56952[0m
+[0;33mW (524659) APP_PLAYER_SDCARD: [rb_diag_warn][pause_before] raw_in usage=89% (filled=471792 size=524288), threshold=80%[0m
+D (524746) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_filter]evt out cmd = 8,status:13[0m
+[0;32mI (524748) AUDIO_ELEMENT: [sdcard_filter] AEL_MSG_CMD_PAUSE[0m
+[0;32mI (524748) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_filter], cmd=8, data=13[0m
+[0;32mI (524761) APP_PLAYER_SDCARD: [_flush_pause_tail_pcm] dropped raw tail pcm: before=472348 after=0[0m
+[0;32mI (524769) APP_PLAYER_SDCARD: [rb_diag][pause_after] state pipe=4 fatfs=3 dec=3 rsp=4 raw(bypass)=1[0m
+[0;32mI (524779) APP_PLAYER_SDCARD: [rb_diag][pause_after] fatfs_out rb=0x3f84a9e0 filled=3568 size=262144 avail=258576[0m
+[0;32mI (524790) APP_PLAYER_SDCARD: [rb_diag][pause_after] dec_in    rb=0x3f84a9e0 filled=3568 size=262144 avail=258576[0m
+[0;32mI (524801) APP_PLAYER_SDCARD: [rb_diag][pause_after] dec_out   rb=0x3f84aa24 filled=63488 size=524288 avail=460800[0m
+[0;32mI (524812) APP_PLAYER_SDCARD: [rb_diag][pause_after] rsp_in    rb=0x3f84aa24 filled=68096 size=524288 avail=456192[0m
+[0;32mI (524823) APP_PLAYER_SDCARD: [rb_diag][pause_after] rsp_out   rb=0x3f84aa68 filled=0 size=524288 avail=524288[0m
+[0;32mI (524834) APP_PLAYER_SDCARD: [rb_diag][pause_after] raw_in    rb=0x3f84aa68 filled=0 size=524288 avail=524288[0m
+[0;32mI (524864) APP_PLAYER_SDCARD: [soft_switch] mute prepared, pipe_state=3[0m
+[0;32mI (524865) APP_PLAYER_SDCARD: [switch_format] Format matched (hot reset)[0m
+[0;32mI (524868) APP_PLAYER_SDCARD: Hot reset pipeline for same format switch[0m
+D (524875) AUDIO_PIPELINE: audio_element_stop[0m
+[0;33mW (524881) AUDIO_PIPELINE: Without stop, st:4[0m
+[0;33mW (524885) AUDIO_PIPELINE: Without wait stop, st:4[0m
+[0;32mI (524890) APP_PLAYER_SDCARD: [_play_latest] SD_PLAYER_STATE not playing[0m
+[0;32mI (524897) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_SWITCHING[0m
+[0;32mI (524905) VIB_AUDIO_BOARD: [displayer_track_num][0m
+D (524946) AUDIO_ELEMENT: [sdcard_fatfs-0x3f84a334] Element already created[0m
+D (524946) AUDIO_ELEMENT: [sdcard_decoder-0x3f84a58c] Element already created[0m
+D (524950) AUDIO_ELEMENT: [sdcard_filter-0x3f84a700] Element already created[0m
+[0;32mI (524958) AUDIO_ELEMENT: [sdcard_fatfs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;31mE (524964) FATFS_STREAM: already opened[0m
+[0;31mE (524968) AUDIO_ELEMENT: [sdcard_fatfs] AEL_STATUS_ERROR_OPEN,-1[0m
+D (524975) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_fatfs]evt out cmd = 8,status:1[0m
+[0;32mI (524982) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_fatfs], cmd=8, data=1[0m
+[0;33mW (524982) AUDIO_ELEMENT: [sdcard_fatfs] audio_element_on_cmd_error,7[0m
+[0;31mE (524991) APP_PLAYER_SDCARD: [sdcard_event_handler] audio element err[0m
+D (524999) AUDIO_ELEMENT: REPORT_INFO,[sdcard_fatfs]evt out cmd:9,[0m
+[0;31mE (525006) APP_PLAYER_SDCARD: [sdcard_event_handler] sdcard_audio.element_fatfs err,  1[0m
+[0;33mW (525012) AUDIO_ELEMENT: IN-[sdcard_decoder] AEL_IO_ABORT[0m
+[0;32mI (525021) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_fatfs], cmd=9, data=0[0m
+[0;32mI (525028) AUDIO_ELEMENT: [sdcard_decoder] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (525036) APP_PLAYER_SDCARD: [sdcard_event_handler] Received music info from [sdcard_fatfs], sample_rates=44100, bits=16, ch=2 [0m
+[0;32mI (525043) ESP_DECODER: Ready to do audio type check, pos:119397, (line 105)[0m
+[0;32mI (525063) ESP_DECODER: Detect audio type is MP3[0m
+[0;32mI (525069) MP3_DECODER: MP3 opened[0m
+[0;33mW (525073) AUDIO_ELEMENT: IN-[sdcard_decoder] AEL_IO_ABORT[0m
+[0;31mE (525079) MP3_DECODER: Failed to read audio data (line 150)[0m
+[0;33mW (525085) AUDIO_ELEMENT: [sdcard_decoder] AEL_IO_ABORT, -3[0m
+[0;32mI (525091) MP3_DECODER: Closed[0m
+D (525095) AUDIO_ELEMENT: REPORT_POS,[sdcard_decoder]evt out cmd:11,[0m
+[0;32mI (525102) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_decoder], cmd=11, data=1065664388[0m
+D (525102) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_decoder]evt out cmd = 8,status:14[0m
+D (525119) AUDIO_ELEMENT: [0x3f84a58c-sdcard_decoder] audio_element_on_cmd_stop, line: 235, state: 5[0m
+[0;32mI (525119) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_decoder], cmd=8, data=14[0m
+[0;32mI (525103) AUDIO_ELEMENT: [sdcard_filter] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (525145) APP_PLAYER_SDCARD: [start_preload] wav=0 threshold=0.00[0m
+[0;32mI (525152) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_LOADING[0m
+[0;33mW (525159) APP_PLAYER_SDCARD: [_play_latest] playlist:file://sdcard/蔡琴 Tsai Chin -《渡口》_320k.mp3 playback:file://sdcard/蔡琴 Tsai Chin -《渡口》_320k.mp3 shadow:0[0m
+[0;32mI (525231) RSP_FILTER: sample rate of source data : 44100, channel of source data : 2, sample rate of destination data : 48000, channel of destination data : 1[0m
+D (525235) AUDIO_ELEMENT: [sdcard_filter] el opened[0m
+D (525240) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_filter]evt out cmd = 8,status:12[0m
+[0;32mI (525247) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_filter], cmd=8, data=12[0m
+[0;33mW (525250) AUDIO_ELEMENT: IN-[sdcard_filter] AEL_IO_ABORT[0m
+D (525263) AUDIO_ELEMENT: [sdcard_filter] ERROR_PROCESS, AEL_IO_ABORT[0m
+D (525270) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_filter]evt out cmd = 8,status:14[0m
+D (525277) AUDIO_ELEMENT: [0x3f84a700-sdcard_filter] audio_element_on_cmd_stop, line: 235, state: 5[0m
+[0;32mI (525277) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_filter], cmd=8, data=14[0m
+[0;32mI (525294) VIB_AUDIO_BOARD: chg_snapshot: present=1, vbat_mV=3649.66, ibat_mA=-188.00, vsys_mV=3645.68, vbus_mV=75.62, ts_percent=14.58, ts_stat=0(Normal), charging=0[0m
+[0;32mI (525331) cahrger: DBG: C0=93 C1=4F C2=04 C3=C0 TMR=0C NTC0=39 NTC1=25 NTC2=3F ST0=00 ST1=00 FAULT=00 FLAG0=00 FLAG1=00 F0=00 MSK0=00 MSK1=00 ADC=B0 AFD0=00 | 02-03=0320 04-05=0D20 06-07=0460 08-09=0D20 10=98[0m
+[0;32mI (525344) cahrger: CTRL: HIZ=1 EN_CHG=0 WDT=3 | EXT_ILIM=0 | TMR{SAFE=1,2x=1,PRE=0} | TS_IGNORE=0 | ADC{EN=1,SAMPLE=3,AVG=0,TS_ADC_DIS=0}[0m
+[0;32mI (525353) cahrger: LIMITS: ICHG=1000mA VBATREG=4.20V | IINLIM=1500mA (EXT_ILIM=0) | VINDPM=4.20V | IPRE=190mA[0m
+[0;32mI (525364) cahrger: STATUS: VBUS_STAT=0 CHG_STAT=0 TS_STAT=0x0 | DPM{V=0,I=0} VSYS_REG=0 TREG=0 | WD_ACT=0 TMR_ACT=0 | FAULT=00[0m
+[0;32mI (525376) cahrger: ADC: VBAT=3650mV VSYS=3646mV IBAT=-188mA | VBUS_RAW=0x004C IBUS_RAW=0x0000 | TS=57.4% TDIE_RAW=0x0046[0m
+[0;33mW (525388) cahrger: DIAG: HIZ=1 (turn off HIZ) | CHG_STAT=0 IPRE=190mA ICHG=1000mA IINLIM=1500mA VINDPM=4.20V[0m
+[0;32mI (525555) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (525555) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (525561) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:7,decoder:5,rsp_filter:5,raw(bypass):1[0m
+[0;31mE (525571) APP_PLAYER_SDCARD: [play_state_check_timer_callback] loading error, play:file://sdcard/蔡琴 Tsai Chin -《渡口》_320k.mp3[0m
+[0;32mI (525584) APP_PLAYER_SDCARD: [_play_latest] SD_PLAYER_STATE not playing[0m
+[0;32mI (525591) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_SWITCHING[0m
+[0;32mI (525598) APP_PLAYER_SDCARD: [rb_diag][switch_before_abort] state pipe=3 fatfs=7 dec=5 rsp=5 raw(bypass)=1[0m
+[0;32mI (525609) APP_PLAYER_SDCARD: [rb_diag][switch_before_abort] fatfs_out rb=0x3f84a9e0 filled=0 size=262144 avail=262144[0m
+[0;32mI (525620) APP_PLAYER_SDCARD: [rb_diag][switch_before_abort] dec_in    rb=0x3f84a9e0 filled=0 size=262144 avail=262144[0m
+[0;32mI (525631) APP_PLAYER_SDCARD: [rb_diag][switch_before_abort] dec_out   rb=0x3f84aa24 filled=0 size=524288 avail=524288[0m
+[0;32mI (525643) APP_PLAYER_SDCARD: [rb_diag][switch_before_abort] rsp_in    rb=0x3f84aa24 filled=0 size=524288 avail=524288[0m
+[0;32mI (525654) APP_PLAYER_SDCARD: [rb_diag][switch_before_abort] rsp_out   rb=0x3f84aa68 filled=2228 size=524288 avail=522060[0m
+[0;32mI (525666) APP_PLAYER_SDCARD: [rb_diag][switch_before_abort] raw_in    rb=0x3f84aa68 filled=2228 size=524288 avail=522060[0m
+D (525677) AUDIO_PIPELINE: audio_element_stop[0m
+D (525682) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_fatfs]evt out cmd = 8,status:14[0m
+[0;32mI (525689) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_fatfs], cmd=8, data=14[0m
+[0;33mW (525699) AUDIO_ELEMENT: [sdcard_fatfs] Element already stopped[0m
+D (525705) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_decoder]evt out cmd = 8,status:14[0m
+[0;32mI (525713) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_decoder], cmd=8, data=14[0m
+[0;33mW (525722) AUDIO_ELEMENT: [sdcard_decoder] Element already stopped[0m
+D (525729) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_filter]evt out cmd = 8,status:14[0m
+[0;32mI (525737) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_filter], cmd=8, data=14[0m
+[0;33mW (525747) AUDIO_ELEMENT: [sdcard_filter] Element already stopped[0m
+D (525753) AUDIO_ELEMENT: [sdcard_raw] Element has not create when AUDIO_ELEMENT_STOP[0m
+D (525761) AUDIO_PIPELINE: audio_pipeline_wait_for_stop - IN[0m
+D (525767) AUDIO_ELEMENT: [sdcard_fatfs] Element already stopped, return without waiting[0m
+D (525775) AUDIO_ELEMENT: [sdcard_decoder] Element already stopped, return without waiting[0m
+D (525783) AUDIO_ELEMENT: [sdcard_filter] Element already stopped, return without waiting[0m
+D (525791) AUDIO_ELEMENT: [sdcard_raw] Element already stopped, return without waiting[0m
+D (525799) AUDIO_PIPELINE: audio_pipeline_wait_for_stop - OUT[0m
+D (525805) AUDIO_PIPELINE: Destroy audio_pipeline elements[0m
+D (525814) AUDIO_ELEMENT: [sdcard_fatfs] AEL_MSG_CMD_DESTROY[0m
+D (525816) AUDIO_ELEMENT: [sdcard_fatfs-0x3f84a334] el task deleted,1808[0m
+D (525823) AUDIO_ELEMENT: [sdcard_fatfs-0x3f84a334] Element task destroyed[0m
+D (525830) AUDIO_ELEMENT: [sdcard_decoder] AEL_MSG_CMD_DESTROY[0m
+D (525836) AUDIO_ELEMENT: [sdcard_decoder-0x3f84a58c] el task deleted,2540[0m
+D (525843) AUDIO_ELEMENT: [sdcard_decoder-0x3f84a58c] Element task destroyed[0m
+D (525852) AUDIO_ELEMENT: [sdcard_filter] AEL_MSG_CMD_DESTROY[0m
+D (525856) AUDIO_ELEMENT: [sdcard_filter-0x3f84a700] el task deleted,2008[0m
+D (525863) AUDIO_ELEMENT: [sdcard_filter-0x3f84a700] Element task destroyed[0m
+[0;33mW (525870) AUDIO_ELEMENT: [sdcard_raw] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;32mI (525879) APP_PLAYER_SDCARD: [rb_diag][switch_after_reset] state pipe=1 fatfs=1 dec=1 rsp=1 raw(bypass)=1[0m
+[0;32mI (525889) APP_PLAYER_SDCARD: [rb_diag][switch_after_reset] fatfs_out rb=0x3f84a9e0 filled=0 size=262144 avail=262144[0m
+[0;32mI (525900) APP_PLAYER_SDCARD: [rb_diag][switch_after_reset] dec_in    rb=0x3f84a9e0 filled=0 size=262144 avail=262144[0m
+[0;32mI (525914) APP_PLAYER_SDCARD: [rb_diag][switch_after_reset] dec_out   rb=0x3f84aa24 filled=0 size=524288 avail=524288[0m
+[0;32mI (525923) APP_PLAYER_SDCARD: [rb_diag][switch_after_reset] rsp_in    rb=0x3f84aa24 filled=0 size=524288 avail=524288[0m
+[0;32mI (525934) APP_PLAYER_SDCARD: [rb_diag][switch_after_reset] rsp_out   rb=0x3f84aa68 filled=0 size=524288 avail=524288[0m
+[0;32mI (525945) APP_PLAYER_SDCARD: [rb_diag][switch_after_reset] raw_in    rb=0x3f84aa68 filled=0 size=524288 avail=524288[0m
+[0;32mI (525957) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (525996) AUDIO_THREAD: The sdcard_fatfs task allocate stack on external memory[0m
+[0;32mI (526004) AUDIO_ELEMENT: [sdcard_fatfs-0x3f84a334] Element task created[0m
+[0;32mI (526004) AUDIO_THREAD: The sdcard_decoder task allocate stack on external memory[0m
+[0;32mI (526009) AUDIO_ELEMENT: [sdcard_decoder-0x3f84a58c] Element task created[0m
+[0;32mI (526017) AUDIO_THREAD: The sdcard_filter task allocate stack on external memory[0m
+[0;32mI (526025) AUDIO_ELEMENT: [sdcard_filter-0x3f84a700] Element task created[0m
+[0;32mI (526033) AUDIO_ELEMENT: [sdcard_fatfs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (526042) AUDIO_ELEMENT: [sdcard_decoder] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (526046) ESP_DECODER: Ready to do audio type check, pos:0, (line 105)[0m
+[0;32mI (526054) AUDIO_ELEMENT: [sdcard_filter] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (526061) APP_PLAYER_SDCARD: [start_preload] wav=0 threshold=0.00[0m
+[0;32mI (526068) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_LOADING[0m
+[0;33mW (526075) APP_PLAYER_SDCARD: [_play_latest] playlist:file://sdcard/蔡琴 Tsai Chin -《渡口》_320k.mp3 playback:file://sdcard/蔡琴 Tsai Chin -《渡口》_320k.mp3 shadow:0[0m
+[0;32mI (526147) RSP_FILTER: sample rate of source data : 44100, channel of source data : 2, sample rate of destination data : 48000, channel of destination data : 1[0m
+D (526151) AUDIO_ELEMENT: [sdcard_filter] el opened[0m
+D (526156) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_filter]evt out cmd = 8,status:12[0m
+[0;32mI (526164) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_filter], cmd=8, data=12[0m
+[0;32mI (526167) FATFS_STREAM: File size: 9379141 byte, file position: 0[0m
+D (526180) AUDIO_ELEMENT: [sdcard_fatfs] el opened[0m
+D (526185) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_fatfs]evt out cmd = 8,status:12[0m
+[0;32mI (526192) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_fatfs], cmd=8, data=12[0m
+[0;32mI (526202) ESP_DECODER: Detect audio type is MP3[0m
+[0;32mI (526207) MP3_DECODER: MP3 opened[0m
+[0;32mI (526211) CODEC_ELEMENT_HELPER: The element is 0x3f84a58c. The reserve data 2 is 0x0.[0m
+D (526223) AUDIO_ELEMENT: [sdcard_decoder] el opened[0m
+D (526225) AUDIO_ELEMENT: REPORT_STATUS,[sdcard_decoder]evt out cmd = 8,status:12[0m
+[0;32mI (526232) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_decoder], cmd=8, data=12[0m
+D (526238) AUDIO_ELEMENT: REPORT_INFO,[sdcard_decoder]evt out cmd:9,[0m
+[0;32mI (526248) APP_PLAYER_SDCARD: [sdcard_event_handler] evt receive [sdcard_decoder], cmd=9, data=0[0m
+[0;32mI (526257) APP_PLAYER_SDCARD: [sdcard_event_handler] Received music info from [sdcard_decoder], sample_rates=44100, bits=16, ch=2 [0m
+[0;32mI (526498) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (526498) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (526504) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (526514) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (526544) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (526544) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=46812 safe=174762 hits=0/2 rb=524288[0m
+[0;32mI (526721) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (526721) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (526729) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (526737) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (526766) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (526767) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=89164 safe=174762 hits=0/2 rb=524288[0m
+[0;32mI (526940) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (526941) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (526947) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (526960) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (526987) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (526987) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=125388 safe=174762 hits=0/2 rb=524288[0m
+[0;32mI (527171) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (527171) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (527177) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (527187) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (527219) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (527219) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=167740 safe=174762 hits=0/2 rb=524288[0m
+[0;32mI (527387) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (527387) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (527393) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (527403) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (527433) APP_PlAYER: [base_stream_read_freeze] enable=1 frozen=1[0m
+[0;32mI (527433) APP_PLAYER_SDCARD: [startup_guard] wait track wav=0 soft=1 filled=202848 safe=174762 hits=1/2 rb=524288[0m
+[0;32mI (527605) APP_PLAYER_SDCARD: [send_cmd] Posting command: SDCARD_CMD_STATE_CHECK[0m
+[0;32mI (527605) APP_PLAYER_SDCARD: [sdcard_cmd_task] Received command: SDCARD_CMD_STATE_CHECK[0m
+[0;33mW (527611) APP_PLAYER_SDCARD: sdcard[3f84a930].pipeline:3,fatfs:3,decoder:3,rsp_filter:3,raw(bypass):1[0m
+[0;32mI (527621) VIB_AUDIO_BOARD: [displayer_track_num][0m
+[0;32mI (527653) APP_PlAYER: [base_stream_read_freeze] enable=0 frozen=0[0m
+[0;32mI (527653) APP_PlAYER: [base_stream_silence_wait] enable=0 timeout=0[0m
+[0;32mI (527656) APP_PLAYER_SDCARD: [startup_guard] ready track wav=0 soft=1 filled=240744 safe=174762[0m
+[0;32mI (527666) APP_PLAYER_SDCARD: [set_state] to: SD_PLAYER_STATE_PLAYING[0m

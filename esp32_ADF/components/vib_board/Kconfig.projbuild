@@ -1,0 +1,38 @@
+menu "VIB Audio Board"
+    
+    choice VIB_BOARD_VERSION
+        prompt "VIB audio board"
+        default VIB_BOARD_V1_0
+        help
+            Select an audio board to use with the ESP-ADF
+
+        config VIB_BOARD_V1_0
+            bool "VIB board v1.0"
+        config VIB_BOARD_V3_0
+            bool "VIB board v3.0"
+    endchoice
+
+    choice AUDIO_CODEC
+        prompt "Audio codec"
+        default AUDIO_CODEC_ES8388
+        help
+            Select an audio codec to use with the ESP-ADF
+
+        config AUDIO_CODEC_ES8388
+            bool "ES8388"
+        config AUDIO_CODEC_ES8311
+            bool "ES8311"
+    endchoice
+
+    choice SDCARD_CD_ACTIVE_LEVEL
+        prompt "My audio board"
+        default SDCARD_CD_ACTIVE_LEVEL_0
+        help
+            Select SDCARD
+    config SDCARD_CD_ACTIVE_LEVEL_0
+        bool "Set sdcard cd/intr active level 0"
+    config SDCARD_CD_ACTIVE_LEVEL_1
+        bool "Set sdcard cd/intr active level 1"
+    endchoice
+endmenu
+

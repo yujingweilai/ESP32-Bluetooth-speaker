@@ -1,0 +1,5 @@
+﻿start=2026-05-14 09:07:43
+logFile=E:\code\16_VIB\new_code_20260313\vib_player\monitor_logs\com28_monitor_20260514_090742.log
+status=error
+message=不能对 Null 值表达式调用方法。
+end=2026-05-14 09:07:43

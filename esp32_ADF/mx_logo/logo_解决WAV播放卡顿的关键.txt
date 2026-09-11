@@ -1,0 +1,530 @@
+fstack-protector -fmacro-prefix-map=E:/code/16_VIB/new_code_20260313/vib_player=. -fmacro-prefix-map=D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_control.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\app_control.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_control.c.obj -c E:/code/16_VIB/new_code_20260313/vib_player/main/app_control.c
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/components/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/components/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/main/app_control.c:25:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: warning: #warning "This set of Touch APIs has been deprecated, please include 'driver/touch_sens.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp]
+   13 | #warning "This set of Touch APIs has been deprecated, \
+      |  ^~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_control.c:36:10: fatal error: input_key_service.h: No such file or directory
+   36 | #include "input_key_service.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[1730/1804] Building C object esp-idf...es/__idf_main.dir/app_sys_tools.c.ob 
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/components/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/components/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/main/app_player.h:4,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/main/app_sys_tools.c:29:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: warning: #warning "This set of Touch APIs has been deprecated, please include 'driver/touch_sens.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp]
+   13 | #warning "This set of Touch APIs has been deprecated, \
+      |  ^~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_sys_tools.c:63:13: warning: '_system_dump' defined but not used [-Wunused-function]
+   63 | static void _system_dump()
+      |             ^~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_sys_tools.c:45:20: warning: 'getPreviousTaskData' defined but not used [-Wunused-function]
+   45 | static taskData_t *getPreviousTaskData(uint32_t xTaskNumber)
+      |                    ^~~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_sys_tools.c:43:17: warning: 'previousTotalRunTime' defined but not used [-Wunused-variable]
+   43 | static uint32_t previousTotalRunTime = 0;
+      |                 ^~~~~~~~~~~~~~~~~~~~
+[1732/1804] Building C object esp-idf...akeFiles/__idf_main.dir/app_ble.c.ob 
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c: In function 'gatts_event_handler':
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:152:32: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  152 |                 uint8_t* mac = esp_bt_dev_get_address();
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:154:17: warning:  
+esp_bt_dev_set_device_name' is deprecated: Please use esp_bt_gap_set_device_name or esp_ble_gap_set_device_name [-Wdeprecated-declarations]
+  154 |                 set_dev_name_ret = esp_bt_dev_set_device_name(device_name);
+      |                 ^~~~~~~~~~~~~~~~
+In file included from E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:15:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/host/bluedroid/api/include/api/esp_bt_device.h:99:11: note: declared here
+   99 | esp_err_t esp_bt_dev_set_device_name(const char *name) __attribute__((deprecated("Please use esp_bt_gap_set_device_name or esp_ble_gap_set_device_name")));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:204:9: warning: 'esp_log_buffer_hex' is deprecated: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declarations]
+  204 |         esp_log_buffer_hex(TAG, param->connect.remote_bda, 6);       
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/log/include/esp_log.h:17,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:6:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/log/include/esp_log_buffer.h:157:20: note: declared here
+  157 | static inline void esp_log_buffer_hex(const char *tag, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+[1733/1804] Building C object esp-idf...Files/__idf_main.dir/app_player.c.ob 
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/components/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/components/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/main/app_player.c:12:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: warning: #warning "This set of Touch APIs has been deprecated, please include 'driver/touch_sens.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp]
+   13 | #warning "This set of Touch APIs has been deprecated, \
+      |  ^~~~~~~
+ninja: build stopped: subcommand failed.
+
+ *  终端进程“D:\espressif\idf551\Espressif\tools\ninja\1.12.1\ninja.EXE”已终止，退出代码: 1。 
+
+ *  正在执行任务: D:\espressif\idf551\Espressif\tools\ninja\1.12.1\ninja.EXE  
+
+[0/1] Re-running CMake...-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/dl_fft": "0.3.1" -> "0.4.0"
+Dependency "espressif/esp_websocket_client": "1.6.0" -> "1.7.0"
+Dependency "espressif/nghttp": "1.65.0~1" -> "1.68.1"
+Dependency "espressif/zlib": "1.3.1" -> "1.3.2"
+Consider running "idf.py update-dependencies" to update your lock file.      
+NOTICE: Processing 9 dependencies:
+NOTICE: [1/9] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/9] espressif/dl_fft (0.3.1)
+NOTICE: [3/9] espressif/esp-dsp (1.6.0)
+NOTICE: [4/9] espressif/esp_lcd_ili9341 (1.2.0)
+NOTICE: [5/9] espressif/esp_websocket_client (1.6.0)
+NOTICE: [6/9] espressif/jsmn (1.1.0)
+NOTICE: [7/9] espressif/nghttp (1.65.0~1)
+NOTICE: [8/9] espressif/zlib (1.3.1)
+NOTICE: [9/9] idf (5.5.1)
+-- Project sdkconfig file E:/code/16_VIB/new_code_20260313/vib_player/sdkconfig
+Loading defaults file E:/code/16_VIB/new_code_20260313/vib_player/sdkconfig.defaults...
+E:/code/16_VIB/new_code_20260313/vib_player/sdkconfig.defaults:22 CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY was replaced with CONFIG_FREERTOS_TASK_CREATE_ALLOW_EXT_MEM
+Loading defaults file E:/code/16_VIB/new_code_20260313/vib_player/sdkconfig.defaults.esp32...
+warning: unknown kconfig symbol 'SDK_TOOLPREFIX' assigned to '"xtensa-esp32-elf-"' in E:/code/16_VIB/new_code_20260313/vib_player/sdkconfig.defaults.esp32warning: unknown kconfig symbol 'SDK_TOOLCHAIN_SUPPORTS_TIME_WIDE_64_BITS' assigned to 'n' in E:/code/16_VIB/new_code_20260313/vib_player/sdkconfig.defaults.esp32
+-- Compiler supported targets: xtensa-esp-elf
+-- USING O3
+-- App "vib_player" version: 3.7.7
+-- Adding linker script E:/code/16_VIB/new_code_20260313/vib_player/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script E:/code/16_VIB/new_code_20260313/vib_player/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Chip is esp32, D:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs
+-- ESP_LCD_ILI9341: 1.2.0
+-- Current board name is CONFIG_AUDIO_BOARD_CUSTOM
+-- board version CONFIG_VIB_BOARD_V3_0
+-- Component idf::esp_coze will be linked with -Wl,--whole-archive
+-- Components: adf_utils app_trace app_update audio_board audio_hal audio_mixer audio_pipeline audio_recorder audio_sal audio_stream battery_service bluetooth_service bootloader bootloader_support bt charger clouds cmock console coredump_upload_service cxx display_service driver dueros_service efuse esp-adf-libs esp-sr esp-tls esp_actions esp_adc esp_app_format esp_bootloader_format esp_codec_dev esp_coex esp_common esp_coze esp_dispatcher esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_event_cast esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_peripherals esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__cmake_utilities espressif__dl_fft espressif__esp-dsp espressif__esp_lcd_ili9341 espressif__esp_websocket_client espressif__jsmn espressif__nghttp espressif__zlib esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 input_key_service json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider oled_ssd1315 openthread ota_service partition_table perfmon periph_battery periph_key playlist protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport tone_partition ulp unity usb vfs vib_board wear_levelling wifi_provisioning wifi_service wpa_supplicant xtensa
+-- Component paths: D:/espressif/VIB_esp-adf/esp-adf/components/adf_utils D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/app_trace D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/app_update D:/espressif/VIB_esp-adf/esp-adf/components/audio_board D:/espressif/VIB_esp-adf/esp-adf/components/audio_hal D:/espressif/VIB_esp-adf/esp-adf/components/audio_mixer D:/espressif/VIB_esp-adf/esp-adf/components/audio_pipeline D:/espressif/VIB_esp-adf/esp-adf/components/audio_recorder D:/espressif/VIB_esp-adf/esp-adf/components/audio_sal D:/espressif/VIB_esp-adf/esp-adf/components/audio_stream D:/espressif/VIB_esp-adf/esp-adf/components/battery_service D:/espressif/VIB_esp-adf/esp-adf/components/bluetooth_service D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt E:/code/16_VIB/new_code_20260313/vib_player/components/charger D:/espressif/VIB_esp-adf/esp-adf/components/clouds D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/cmock D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/console D:/espressif/VIB_esp-adf/esp-adf/components/coredump_upload_service D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/cxx D:/espressif/VIB_esp-adf/esp-adf/components/display_service D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver D:/espressif/VIB_esp-adf/esp-adf/components/dueros_service D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/efuse D:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs D:/espressif/VIB_esp-adf/esp-adf/components/esp-sr D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp-tls D:/espressif/VIB_esp-adf/esp-adf/components/esp_actions D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_adc D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_bootloader_format D:/espressif/VIB_esp-adf/esp-adf/components/esp_codec_dev D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_coex D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_common D:/espressif/VIB_esp-adf/esp-adf/components/esp_coze D:/espressif/VIB_esp-adf/esp-adf/components/esp_dispatcher D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_ana_cmpr D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_bitscrambler D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_cam D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_dac D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gptimer D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_i2c D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_i2s D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_isp D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_jpeg D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_ledc D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_mcpwm D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_parlio D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_pcnt D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_ppa D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdio D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdm D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdmmc D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdspi D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_touch_sens D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_tsens D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_twai 
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_uart D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_usb_serial_jtag D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_eth D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_event D:/espressif/VIB_esp-adf/esp-adf/components/esp_event_cast D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_gdbstub D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hid D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_client D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_https_ota D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_https_server D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_lcd D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_local_ctrl D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_netif D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_netif_stack D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition D:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_phy D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_psram D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_ringbuf D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_vfs_console D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_wifi D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/espcoredump E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__cmake_utilities E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__dl_fft E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__esp-dsp E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__esp_lcd_ili9341 E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__esp_websocket_client E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__jsmn E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__nghttp E:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__zlib D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/fatfs D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/hal D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/heap D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/http_parser D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/idf_test 
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/ieee802154 D:/espressif/VIB_esp-adf/esp-adf/components/input_key_service D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/json D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/log D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip E:/code/16_VIB/new_code_20260313/vib_player/main D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mqtt D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/newlib D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_flash D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_sec_provider E:/code/16_VIB/new_code_20260313/vib_player/components/oled_ssd1315 D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/openthread D:/espressif/VIB_esp-adf/esp-adf/components/ota_service D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/perfmon E:/code/16_VIB/new_code_20260313/vib_player/components/periph_battery E:/code/16_VIB/new_code_20260313/vib_player/components/periph_key D:/espressif/VIB_esp-adf/esp-adf/components/playlist D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/protobuf-c D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/protocomm D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/pthread D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/rt D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/sdmmc D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/soc D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/spiffs D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/tcp_transport D:/espressif/VIB_esp-adf/esp-adf/components/tone_partition D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/ulp D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/unity D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/usb D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/vfs E:/code/16_VIB/new_code_20260313/vib_player/components/vib_board D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/wear_levelling D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/wifi_provisioning D:/espressif/VIB_esp-adf/esp-adf/components/wifi_service D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/wpa_supplicant D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa
+-- Configuring done (23.2s)
+-- Generating done (2.2s)
+-- Build files have been written to: E:/code/16_VIB/new_code_20260313/vib_player/build
+
+[0/82] Building C object esp-idf/inpu...y_service.dir/input_key_service.c.obj
+[0/82] Building C object esp-idf/play...les/__idf_playlist.dir/playlist.c.obj
+[0/82] Building C object esp-idf/play...dir/playlist_operator/dram_list.c.obj[0/82] Building C object esp-idf/play...ir/playlist_operator/flash_list.c.obj
+[0/82] Building C object esp-idf/play...laylist_operator/partition_list.c.obj[0/82] Building C object esp-idf/play...r/playlist_operator/sdcard_list.c.obj
+[0/82] Building C object esp-idf/play...ist.dir/sdcard_scan/sdcard_scan.c.obj
+[0/82] Building C object esp-idf/adf_.../__idf_adf_utils.dir/json_utils.c.obj[0/82] Building C object esp-idf/adf_...oud_services/aws_sig_v4_signing.c.obj
+[0/82] Building C object esp-idf/adf_...oud_services/baidu_access_token.c.obj
+[1/82] Building C object esp-idf/play...dir/playlist_operator/dram_list.c.obj
+[1/82] Building C object esp-idf/audi...idf_audio_mixer.dir/audio_mixer.c.obj
+[2/82] Building C object esp-idf/play...ist.dir/sdcard_scan/sdcard_scan.c.obj
+[2/82] Building C object esp-idf/batt...ery_service.dir/battery_service.c.obj
+[3/82] Building C object esp-idf/play...laylist_operator/partition_list.c.obj
+[3/82] Building C object esp-idf/batt...ce.dir/monitors/voltage_monitor.c.obj
+[4/82] Building C object esp-idf/play...ir/playlist_operator/flash_list.c.obj
+[4/82] Building C object esp-idf/core...ice.dir/coredump_upload_service.c.obj
+[5/82] Building C object esp-idf/adf_...oud_services/aws_sig_v4_signing.c.obj
+[5/82] Building C object esp-idf/esp_...esp_codec_dev.dir/esp_codec_dev.c.obj
+[6/82] Building C object esp-idf/play...les/__idf_playlist.dir/playlist.c.obj
+[6/82] Building C object esp-idf/esp_...codec_dev.dir/esp_codec_dev_vol.c.obj
+[7/82] Building C object esp-idf/adf_...oud_services/baidu_access_token.c.obj
+[7/82] Building C object esp-idf/esp_..._codec_dev.dir/esp_codec_dev_if.c.obj
+[8/82] Building C object esp-idf/inpu...y_service.dir/input_key_service.c.obj
+
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from D:/espressif/VIB_esp-adf/esp-adf/components/inp
+ut_key_service/include/input_key_service.h:32,
+                 from D:/espressif/VIB_esp-adf/esp-adf/components/inp
+ut_key_service/input_key_service.c:32:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+[8/82] Linking C static library esp-i...ut_key_service\libinput_key_service.a
+[9/82] Building C object esp-idf/play...r/playlist_operator/sdcard_list.c.obj
+[10/82] Building C object esp-idf/adf.../__idf_adf_utils.dir/json_utils.c.obj
+[10/82] Building C object esp-idf/esp...odec_dev.dir/audio_codec_sw_vol.c.obj
+[11/82] Building C object esp-idf/esp...codec_dev.dir/esp_codec_dev_vol.c.obj
+[11/82] Building C object esp-idf/esp...v.dir/platform/audio_codec_gpio.c.obj
+[12/82] Building C object esp-idf/aud...idf_audio_mixer.dir/audio_mixer.c.obj
+[12/82] Building C object esp-idf/esp...r/platform/audio_codec_ctrl_i2c.c.obj
+[13/82] Building C object esp-idf/esp..._codec_dev.dir/esp_codec_dev_if.c.obj
+[13/82] Building C object esp-idf/esp...r/platform/audio_codec_data_i2s.c.obj
+[14/82] Building C object esp-idf/esp...esp_codec_dev.dir/esp_codec_dev.c.obj
+[14/82] Building C object esp-idf/esp...r/platform/audio_codec_ctrl_spi.c.obj
+[15/82] Building C object esp-idf/esp...odec_dev.dir/audio_codec_sw_vol.c.obj
+[15/82] Building C object esp-idf/esp...v.dir/platform/esp_codec_dev_os.c.obj
+[16/82] Building C object esp-idf/bat...ce.dir/monitors/voltage_monitor.c.obj
+[16/82] Building C object esp-idf/esp...ec_dev.dir/device/es8311/es8311.c.obj
+[17/82] Building C object esp-idf/cor...ice.dir/coredump_upload_service.c.obj[17/82] Building C object esp-idf/esp...ec_dev.dir/device/es8389/es8389.c.obj
+[18/82] Linking C static library esp-...ut_key_service\libinput_key_service.a
+[18/82] Linking C static library esp-...\libespressif__esp_websocket_client.a
+[19/82] Building C object esp-idf/bat...ery_service.dir/battery_service.c.obj[19/82] Building C object esp-idf/esp...sp_coze.dir/http_client_request.c.obj
+[20/82] Building C object esp-idf/esp...v.dir/platform/audio_codec_gpio.c.obj
+[20/82] Building C object esp-idf/esp...p_event_cast.dir/esp_event_cast.c.obj[21/82] Building C object esp-idf/mai...les/__idf_main.dir/lib/fw_timer.c.obj
+[22/82] Building C object esp-idf/esp...r/platform/audio_codec_ctrl_i2c.c.obj
+[22/82] Building C object esp-idf/mai..._idf_main.dir/app_player_sdcard.c.obj
+[23/82] Building C object esp-idf/esp...v.dir/platform/esp_codec_dev_os.c.obj
+[23/82] Building C object esp-idf/mai...es/__idf_main.dir/app_gatt_uart.c.obj
+[24/82] Building C object esp-idf/esp...r/platform/audio_codec_data_i2s.c.obj[24/82] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_bt.c.obj
+[25/82] Building C object esp-idf/esp...ec_dev.dir/device/es8311/es8311.c.obj[25/82] Building C object esp-idf/mai...Files/__idf_main.dir/app_player.c.obj
+[26/82] Linking C static library esp-...\libespressif__esp_websocket_client.a
+[26/82] Building C object esp-idf/mai...iles/__idf_main.dir/app_control.c.obj
+[27/82] Building C object esp-idf/esp...ec_dev.dir/device/es8389/es8389.c.obj
+[27/82] Building C object esp-idf/mai...es/__idf_main.dir/app_sys_tools.c.obj
+[28/82] Building C object esp-idf/esp...p_event_cast.dir/esp_event_cast.c.obj
+[28/82] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[29/82] Building C object esp-idf/esp...r/platform/audio_codec_ctrl_spi.c.obj
+[29/82] Building C object esp-idf/mai...__idf_main.dir/audio_embed_tone.c.obj
+[30/82] Building C object esp-idf/esp...sp_coze.dir/http_client_request.c.obj[30/82] Building C object esp-idf/mai...akeFiles/__idf_main.dir/app_ble.c.obj
+[31/82] Building C object esp-idf/mai...les/__idf_main.dir/lib/fw_timer.c.obj
+[31/82] Building C object esp-idf/mai...les/__idf_main.dir/app_gatt_ota.c.obj
+[32/82] Building C object esp-idf/mai...__idf_main.dir/audio_embed_tone.c.obj
+[32/82] Building C object esp-idf/mai.../__idf_main.dir/app_gatt_device.c.obj
+[33/82] Building C object esp-idf/mai...es/__idf_main.dir/app_gatt_uart.c.obj
+
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_player.h:4,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_gatt_uart.c:10:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+[m]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+[33/82] Building ASM object esp-idf/m..._idf_main.dir/__/__/bloop_1.mp3.S.obj
+[34/82] Building C object esp-idf/mai...iles/__idf_main.dir/app_control.c.obj
+
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_control.c.obj    
+D:\espressif\idf551\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DADF_VER=\"86cb825-dirty\" -DESP_PLATFORM -DHAVE_CONFIG_H -DIDF_VER=\"v5.5.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IE:/code/16_VIB/new_code_20260313/vib_player/build/config -IE:/code/16_VIB/new_code_20260313/vib_player/main -IE:/code/16_VIB/new_code_20260313/vib_player/main/lib -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/platform_include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/config/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/config/include/freertos -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/config/xtensa/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/esp_additions/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/include/soc -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/include/soc/esp32 -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/dma/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/ldo/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/debug_probe/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/mspi_timing_tuning/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/power_supply/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32/. -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/heap/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/log/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/soc/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32 -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32/register -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/hal/platform_port/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/hal/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/hal/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32/include/esp32 -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/esp32 -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_common/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/include/private -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/deprecated_include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/include/apps -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/include/apps/sntp -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/lwip/src/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/port/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/port/freertos/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/port/esp32xx/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/port/esp32xx/include/arch -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/port/esp32xx/include/sys -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/app_update/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/bootloader_flash/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_bootloader_format/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition/include -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_stream/include -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_pipeline/include -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_sal/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/esp_audio/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/esp_codec/include/codec -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/esp_codec/include/processing -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/esp_new_jpeg/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/media_lib_sal/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/media_lib_sal/include/port -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/esp_muxer/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-adf-libs/esp_media_protocols/include -IE:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__nghttp/port/include 
+-IE:/code/16_VIB/new_code_20260313/vib_player/managed_components/espressif__nghttp/nghttp2/lib/includes -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp-tls -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp-tls/esp-tls-crypto -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/port/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/mbedtls/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/mbedtls/library -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/esp_crt_bundle/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_netif/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_event/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/deprecated -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/i2c/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/twai/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/driver/touch_sensor/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_ringbuf/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_pcnt/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gptimer/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_mcpwm/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_ana_cmpr/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_i2s/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdmmc/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/sdmmc/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdspi/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdio/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_dac/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_tsens/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_sdm/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_i2c/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_uart/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/vfs/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_ledc/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_parlio/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_usb_serial_jtag/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_twai/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_client/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/tcp_transport/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/spiffs/include -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_board/include -IE:/code/16_VIB/new_code_20260313/vib_player/components/vib_board/board_v3_0 -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_adc/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_adc/interface -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_adc/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_adc/deprecated/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_dispatcher/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_actions/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_flash/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/include -ID:/espressif/VIB_esp-adf/esp-adf/components/tone_partition/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-sr/esp-tts/esp_tts_chinese/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-sr/include/esp32 -ID:/espressif/VIB_esp-adf/esp-adf/components/esp-sr/src/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/json/cJSON -ID:/espressif/VIB_esp-adf/esp-adf/components/bluetooth_service/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/include/esp32/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/osi/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/api/include/api -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/btc/profile/esp/blufi/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/btc/profile/esp/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/hci_log/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/ble_log/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/host/bluedroid/api/include/api -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/tinycrypt/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt/common/tinycrypt/port -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_wifi/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_wifi/include/local -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_wifi/wifi_apps/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_wifi/wifi_apps/nan_app/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_phy/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_phy/esp32/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/include -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/adc_button -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/gpio_isr -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/button -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/blufi -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/IS31FL3216 -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/aw2013 -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/tca9554 -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/driver/i2c_bus -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/sdcard -ID:/espressif/VIB_esp-adf/esp-adf/components/esp_peripherals/lib/touch -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/include -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es8388 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es8374 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es8311 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es8156 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es7243 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es7148 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es7210 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/es7243e -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/tas5805m -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/include -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/zl38063 -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/zl38063/api_lib -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/zl38063/example_apps -ID:/espressif/VIB_esp-adf/esp-adf/components/audio_hal/driver/zl38063/firmware -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/fatfs/diskio -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/fatfs/src -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/fatfs/vfs -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/wear_levelling/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/console -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_vfs_console/include -ID:/espressif/VIB_esp-adf/esp-adf/components/display_service/include -ID:/espressif/VIB_esp-adf/esp-adf/components/display_service/led_indicator/include -ID:/espressif/VIB_esp-adf/esp-adf/components/display_service/led_bar/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/wpa_supplicant/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/wpa_supplicant/port/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/wpa_supplicant/esp_supplicant/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_lcd/include -ID:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/esp_lcd/interface -ID:/espressif/VIB_esp-adf/esp-adf/components/input_key_service/include -ID:/espressif/VIB_esp-adf/esp-adf/components/playlist/include -IE:/code/16_VIB/new_code_20260313/vib_player/components/periph_key -IE:/code/16_VIB/new_code_20260313/vib_player/components/periph_key/include -IE:/code/16_VIB/new_code_20260313/vib_player/components/periph_battery/include -IE:/code/16_VIB/new_code_20260313/vib_player/components/charger -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset 
+-fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Os -freorder-blocks -fstack-protector -fmacro-prefix-map=E:/code/16_VIB/new_code_20260313/vib_player=. -fmacro-prefix-map=D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_control.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\app_control.c.obj.d -o 
+esp-idf/main/CMakeFiles/__idf_main.dir/app_control.c.obj -c E:/code/16_VIB/new_code_20260313/vib_player/main/app_control.c
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_control.c:25:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+[m]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_control.c:37:10:
+ fatal error: wifi_service.h: No such file or director
+y
+   37 | #include "wifi_service.h"
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+[35/82] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[36/82] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_bt.c.obj
+
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_player.h:4,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_bt.c:6:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_bt.c: In f
+unction 'app_bt_init':
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_bt.c:88:20:
+ warning: initialization discards 'const' qua
+lifier from pointer target type [-Wdiscarded-qualifiers]    
+   88 |     uint8_t *mac = esp_bt_dev_get_address();        
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_bt.c:91:5:
+ warning: 'esp_bt_dev_set_device_name' is depr
+ecated: Please use esp_bt_gap_set_device_name or esp_ble_gap_set_device_name 
+[-Wdeprecated-declarations]
+   91 |     set_dev_name_ret = esp_bt_dev_set_device_name(de
+vice_name);
+      |     ^~~~~~~~~~~~~~~~
+In file included from D:/espressif/VIB_esp-adf/esp-adf/components/blu
+etooth_service/include/a2dp_stream.h:39,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_bt.c:3:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt
+/host/bluedroid/api/include/api/esp_bt_device.h:99:11: note:
+ declared here
+   99 | esp_err_t esp_bt_dev_set_device_name(const char *nam
+e) __attribute__((deprecated("Please use esp_bt_gap_set_device_name or esp_ble_gap_set_device_name")));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[37/82] Building C object esp-idf/mai...es/__idf_main.dir/app_sys_tools.c.obj
+
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_player.h:4,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_sys_tools.c:29:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_sys_tools.c:63:1
+3: warning: '_system_dump' defined but n
+ot used [-Wunused-function]
+   63 | static void _system_dump()
+      |             ^~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_sys_tools.c:45:2
+0: warning: 'getPreviousTaskData' define
+d but not used [-Wunused-function]
+   45 | static taskData_t *getPreviousTaskData(uint32_t xTas
+kNumber)
+      |                    ^~~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_sys_tools.c:43:1
+7: warning: 'previousTotalRunTime' defin
+ed but not used [-Wunused-variable]
+   43 | static uint32_t previousTotalRunTime = 0;
+      |                 ^~~~~~~~~~~~~~~~~~~~
+[38/82] Building C object esp-idf/mai...akeFiles/__idf_main.dir/app_ble.c.obj
+
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c: In 
+function 'gatts_event_handler':
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:152:32:
+ warning: initialization discards 'const' q
+ualifier from pointer target type [-Wdiscarded-qualifiers]  
+  152 |                 uint8_t* mac = esp_bt_dev_get_address
+();
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:154:17:
+ warning: 'esp_bt_dev_set_device_name' is d
+eprecated: Please use esp_bt_gap_set_device_name or esp_ble_gap_set_device_name [-Wdeprecated-declarations]
+  154 |                 set_dev_name_ret = esp_bt_dev_set_de
+vice_name(device_name);
+      |                 ^~~~~~~~~~~~~~~~
+In file included from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_ble.c:15:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/bt
+/host/bluedroid/api/include/api/esp_bt_device.h:99:11: note:
+ declared here
+   99 | esp_err_t esp_bt_dev_set_device_name(const char *nam
+e) __attribute__((deprecated("Please use esp_bt_gap_set_device_name or esp_ble_gap_set_device_name")));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_ble.c:204:9:
+ warning: 'esp_log_buffer_hex' is deprecated
+: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declarations
+]
+  204 |         esp_log_buffer_hex(TAG, param->connect.remot
+e_bda, 6);
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/log/include/esp_log.h:17,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/m        ain/app_ble.c:6:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lo
+g/include/esp_log_buffer.h:157:20: note: declared here
+
+  157 | static inline void esp_log_buffer_hex(const char *ta
+g, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+[39/82] Building ASM object esp-idf/m..._idf_main.dir/__/__/bloop_1.mp3.S.obj
+[40/82] Building C object esp-idf/mai...les/__idf_main.dir/app_gatt_ota.c.obj
+
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_gatt_ota.c:17:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_ota.c:
+ In function 'example_exec_write_event_env':
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_ota.c:200:9
+: warning: 'esp_log_buffer_hex' is depre
+cated: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declarations
+]
+  200 |         esp_log_buffer_hex(TAG, prepare_write_env->p
+repare_buf, prepare_write_env->prepare_len);
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/log/include/esp_log.h:17,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_gatt_ota.c:9:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lo
+g/include/esp_log_buffer.h:157:20: note: declared here
+
+  157 | static inline void esp_log_buffer_hex(const char *ta
+g, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_ota.c:
+ In function 'app_gatt_ota_event_handler':
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_ota.c:478:1
+3: warning: 'esp_log_buffer_hex' is depr
+ecated: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declaration
+s]
+  478 |             esp_log_buffer_hex(TAG, param->connect.r
+emote_bda, 6);
+      |             ^~~~~~~~~~~~~~~~~~
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lo
+g/include/esp_log_buffer.h:157:20: note: declared here
+
+  157 | static inline void esp_log_buffer_hex(const char *ta
+g, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_ota.c:479:4
+2: warning: unused variable 'conn_params
+' [-Wunused-variable]
+  479 |             esp_ble_conn_update_params_t conn_params
+ = {0};
+      |                                          ^~~~~~~~~~~
+
+[41/82] Building C object esp-idf/mai.../__idf_main.dir/app_gatt_device.c.obj
+
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_device.c:31
+:1: warning: useless storage class specifier in empty 
+declaration
+   31 | };
+      | ^
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_device.c:
+ In function 'app_gatts_device_event_handler':
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_gatt_device.c:10
+5:13: warning: 'esp_log_buffer_hex' is d
+eprecated: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declarat
+ions]
+  105 |             esp_log_buffer_hex(TAG, param->connect.r
+emote_bda, 6);
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/log/include/esp_log.h:17,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_gatt_device.c:10:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/lo
+g/include/esp_log_buffer.h:157:20: note: declared here
+
+  157 | static inline void esp_log_buffer_hex(const char *ta
+g, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+[42/82] Building C object esp-idf/mai...Files/__idf_main.dir/app_player.c.obj
+
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_player.c:12:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+[43/82] Building C object esp-idf/mai..._idf_main.dir/app_player_sdcard.c.obj
+
+In file included from D:/espressif/idf551/Espressif/frameworks/esp-id
+f-v5.5.1/components/driver/touch_sensor/include/driver/touch_pad.h:12, 
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board_def.h:28,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/com
+ponents/vib_board/board_v3_0/board.h:29,
+                 from E:/code/16_VIB/new_code_20260313/vib_player/mai
+n/app_player_sdcard.c:34:
+D:/espressif/idf551/Espressif/frameworks/esp-idf-v5.5.1/components/dr
+iver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: 
+warning: #warning "This set of Touch APIs has been deprecated, please i
+nclude 'driver/touch_sens.h' instead. if you want to keep using the old APIs 
+and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp
+]
+   13 | #warning "This set of Touch APIs has been deprecated
+, \
+      |  ^~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_player_sdcard.c:
+ In function '_select_playable_track':
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_player_sdcard.c:
+1789:28: warning: assignment discards 'const
+' qualifier from pointer target type [-Wdiscarded-qualifiers
+]
+ 1789 |         plan->playlist_url = candidate;
+      |                            ^
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_player_sdcard.c:
+ At top level:
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_player_sdcard.c:
+2716:13: warning: 'sdcard_url_save_cb' d
+efined but not used [-Wunused-function]
+ 2716 | static void sdcard_url_save_cb(void *user_data, char
+ *url)
+      |             ^~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_player_sdcard.c:
+1889:14: warning: '_get_track_preload_threshol
+d' defined but not used [-Wunused-function]
+ 1889 | static float _get_track_preload_threshold(const trac
+k_play_plan_t *plan)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/code/16_VIB/new_code_20260313/vib_player/main/app_player_sdcard.c:
+1351:18: warning: '_rebuild_playlist_by_format
+' defined but not used [-Wunused-function]
+ 1351 | static esp_err_t _rebuild_playlist_by_format(playlis
+t_handle_t *playlist_handle)
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~        
+ninja: build stopped: subcommand failed.
+
+ *  终端进程“D:\espressif\idf551\Espressif\tools\ninja\1.12.1\ninja.EXE”已终止，退出代码: 1。 
